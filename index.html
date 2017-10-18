@@ -14,6 +14,20 @@
     <script src="js/dc.js"></script>
     <script src="js/leaflet.js"></script>
     <script src="js/dc.leaflet.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-108259559-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
 </head>
 
 <body>
@@ -21,11 +35,11 @@
         <div class="row" style="padding-top: 15px;">
             <div class="col-md-6">
                 <div class="col-sm-3">
-                    <img class="img-responsive" src="data/eaa_logo.svg" alt="Chania">
+                    <img class="img-responsive" src="data/eaa_logo.svg" alt="EAA">
 
                 </div>
                 <div class="col-sm-3">
-                    <img class="img-responsive" src="data/HDX-logo-home.svg" alt="Chania">
+                    <img class="img-responsive" src="data/HDX-logo-home.svg" alt="HDX">
 
                 </div>
             </div>
@@ -75,8 +89,8 @@
                 <div class="col-xs-12" style="padding-top: 50px;">
                     <div id="hdx-3W-where" class="hdx-3w-chart"></div>
                 </div>
-                <div>
-                    <p style="margin-top: 5px; font-size: 11px; font-style: italic">The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.</p>
+                <div id="note" style="font-size: 0.95em;">
+                    <p>The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.</p>
                 </div>
             </div>
         </div>
