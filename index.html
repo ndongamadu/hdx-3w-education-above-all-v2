@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>3W Education above all</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dc.css" />
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/leaflet.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/crossfilter.v1.min.js"></script>
+    <script src="js/dc.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/dc.leaflet.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="padding-top: 15px;">
+            <div class="col-md-6">
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="data/eaa_logo.svg" alt="Chania">
+
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive" src="data/HDX-logo-home.svg" alt="Chania">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="description">
+                <p>
+                    This visualization, which was produced for Education Above All (EAA), features an overview of children who are out of school in the following countries: the Democratic Republic of the Congo, India, Nigeria, Sudan, Syria, Yemen, Chad, Ethiopia, Iran, Kenya, Malaysia, Pakistan, Rwanda, South Sudan and Uganda. This visualization also shows which organisation are doing what and where to empower children to education. EAA is a global foundation protecting the right of children and youth to quality education. This visualization aggregates data sets from UNICEF, U.S. Fund for UNICEF, International Rescue Committee, Caritas, Oando Foundation, Educate Girls, UNHCR and HPPI. This visualization captures data from the time period: 1st of January 2012 through the 31st of December 2016.</p>
+            </div>
+        </div>
+        <div id="header" class="row"> </div>
+        <div class="row">
+            <div class="col-md-8 removepadding" id="keyFigures">
+                <div class="col-xs-6 removepadding">
+                    <h5>Total Out Of School Children targeted</h5>
+                    <p id="oosc"></p>
+                </div>
+                <div class="col-xs-6">
+                    <h5>Number of countries covered</h5>
+                    <p id="numCountries"></p>
+                </div>
+            </div>
+            <div class="col-md-4" id="keyFigures">
+                <div class="col-xs-12">
+                    <h5>Total number of projects</h5>
+                    <p id="numProject"></p>
+                </div>
+                <div class="col-xs-12">
+                    <a class="reset btn btn-primary btn-sm" id="reset" href="javascript:dc.filterAll();dc.redrawAll();">Reset All</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 removepadding">
+                <div class="col-xs-6 colheight">
+                    <h5>Organisations</h5>
+                    <div id="hdx-3W-who" class="hdx-3w-chart"></div>
+                </div>
+                <div class="col-xs-6 colheight">
+                    <h5>Interventions</h5>
+                    <div id="hdx-3W-what" class="hdx-3w-chart"></div>
+                </div>
+            </div>
+            <div class="col-md-4 removepadding">
+                <div class="col-xs-12" style="padding-top: 50px;">
+                    <div id="hdx-3W-where" class="hdx-3w-chart"></div>
+                </div>
+                <div>
+                    <p style="margin-top: 5px; font-size: 11px; font-style: italic">The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/site.js"></script>
+
+</body>
+
+</html>
