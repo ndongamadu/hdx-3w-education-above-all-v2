@@ -205,9 +205,11 @@ function generate3WComponent(config, data, geom) {
     };
 
     var formatComma = d3.format(',');
+    var formatDecimalComma = d3.format(",.0f");
+
 
     ooscNumber.group(gp)
-        .formatNumber(d3.format(','))
+        .formatNumber(formatDecimalComma)
         .valueAccessor(getTotalOosc)
         .html({
             none: "<span style=\"color:steelblue; font-size: 26px;\">448,097</span>"
